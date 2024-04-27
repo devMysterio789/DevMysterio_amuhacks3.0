@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".communication">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:id="@+id/cvcc"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="6dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/communication"
+                android:scaleY="1.9"
+                android:scaleX="1.4"
+                />
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        <TextView
+            android:id="@+id/txtcc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Communication, Collaboration and Participation"
+            android:textAlignment="center"
+            style="@style/TextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="25dp"
+            android:fontFamily="serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvcc"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/txti2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Harnessing Digital Literacy: The Power of Communication, Collaboration, and Participation\n
+
+\nIn today's interconnected world, digital literacy extends beyond technical skills to encompass effective communication, collaboration, and active participation in digital communities. Here's why these aspects are crucial:\n
+
+\n1. Communication: Digital literacy enables individuals to communicate effectively through various digital channels, including email, social media, and instant messaging platforms. It involves not only conveying ideas clearly but also understanding digital etiquette, managing online presence, and interpreting non-verbal cues in a digital context. Strong communication skills foster meaningful connections, facilitate information sharing, and drive collaboration in both personal and professional settings.\n
+
+\n2. Collaboration: Digital literacy empowers individuals to collaborate seamlessly across geographical boundaries and time zones. It involves leveraging digital tools and platforms for real-time communication, file sharing, and project management. By fostering a collaborative mindset, digital literacy enables teams to work together efficiently, harness collective intelligence, and achieve shared goals, regardless of physical distance or organizational structure.\n
+
+\n3. Participation: Digital literacy encourages active participation in digital communities and online platforms. It involves not only consuming content but also engaging in discussions, sharing insights, and contributing to collective knowledge. By participating in online forums, social networks, and collaborative projects, individuals can expand their networks, exchange ideas, and drive positive change in areas ranging from education and advocacy to innovation and entrepreneurship.\n
+
+\nIn summary, communication, collaboration, and participation are essential components of digital literacy, enabling individuals to engage meaningfully in the digital world. By cultivating these skills, individuals can leverage the power of technology to connect, collaborate, and create value in diverse contexts, ultimately contributing to a more inclusive, informed, and empowered society.
+
+
+
+
+
+
+
+"
+            android:textAlignment="center"
+            style="@style/TextColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtcc1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".creation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:id="@+id/cvc"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="6dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/creative"
+                />
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        <TextView
+            android:id="@+id/txtc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Creation, Innovation and Research"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/TextColor"
+            android:textSize="25dp"
+            android:fontFamily="serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvc"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/txtc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Empowering Digital Literacy through Creation, Innovation, and Research\n
+
+\nIn the digital age, fostering digital literacy goes beyond passive consumption; it involves active engagement through creation, innovation, and research.\n
+
+\n1. Creation: Digital literacy encourages individuals to become creators rather than mere consumers of content. Whether it's writing blogs, producing videos, or designing graphics, creation fosters critical thinking, problem-solving, and communication skills. By engaging in content creation, individuals not only express themselves but also contribute to the collective knowledge and culture of the digital world.\n
+
+\n2. Innovation: Innovation is at the heart of digital literacy, driving progress and transformation in various fields. Digital literacy empowers individuals to harness technology creatively, develop new ideas, and solve complex problems. By fostering a mindset of innovation, digital literacy enables individuals to adapt to technological advancements, embrace change, and explore new opportunities in the digital landscape.\n
+
+\n3. Research: Research is fundamental to digital literacy, enabling individuals to access, evaluate, and synthesize information effectively. In the digital realm, research involves navigating vast amounts of data and information, discerning credible sources, and critically analyzing findings. Digital literacy equips individuals with the skills to conduct research ethically, evaluate the reliability of sources, and draw evidence-based conclusions.\n
+
+\nIn summary, digital literacy encompasses the ability to create, innovate, and research in the digital environment. By encouraging active participation and critical engagement, digital literacy empowers individuals to not only consume but also contribute meaningfully to the digital world, driving innovation, and advancing knowledge and understanding."
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/TextColor"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtc1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

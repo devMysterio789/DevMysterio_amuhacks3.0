@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teaching">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:id="@+id/cvt"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="6dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/teaching"
+                />
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        <TextView
+            android:id="@+id/txtt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teaching, Learning and Self-development"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/TextColor"
+            android:textSize="25dp"
+            android:fontFamily="serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvt"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/txtt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Empowering Digital Literacy through Teaching, Learning, and Self-Development\n
+
+\nIn the digital era, the landscape of education and personal growth is continually evolving. Digital literacy plays a pivotal role in facilitating teaching, learning, and self-development in the following ways:\n
+
+\n1. Teaching: Digital literacy empowers educators to leverage technology to enhance the learning experience. It enables them to design interactive lessons, utilize multimedia resources, and engage students in collaborative online environments. By integrating digital tools and platforms into teaching practices, educators can cater to diverse learning styles, foster critical thinking, and prepare students for success in the digital age.\n
+
+\n2. Learning: Digital literacy equips learners with the skills and competencies needed to navigate and thrive in a digital world. It enables them to access a wealth of educational resources online, engage in self-directed learning, and participate in virtual communities of practice. Through digital platforms and learning management systems, learners can personalize their learning journey, acquire new knowledge and skills, and adapt to changing demands in their fields.\n
+
+\n3. Self-Development: Digital literacy empowers individuals to take ownership of their personal and professional development. It provides access to online courses, tutorials, and resources covering a wide range of topics and disciplines. By cultivating digital literacy skills such as information literacy, media literacy, and technology proficiency, individuals can enhance their employability, pursue lifelong learning opportunities, and stay relevant in a rapidly evolving job market.\n
+
+\nIn summary, digital literacy is integral to teaching, learning, and self-development in the digital age. By embracing digital tools, resources, and platforms, individuals can unlock new possibilities for education, growth, and empowerment, enriching their lives and contributing to the advancement of society as a whole."
+            android:textAlignment="center"
+            style="@style/TextColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtt1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

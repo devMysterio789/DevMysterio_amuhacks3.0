@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".technical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:id="@+id/cvtp"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="6dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleY="1.5"
+                android:src="@drawable/proficiency"
+                />
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        <TextView
+            android:id="@+id/txttp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Technical Proficiency"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/TextColor"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:fontFamily="serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvtp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/txti2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            style="@style/TextColor"
+            android:text="Navigating the Digital Landscape: The Significance of Technical Proficiency in Digital Literacy\n
+
+\nIn today's interconnected world, technical proficiency is a cornerstone of digital literacy, enabling individuals to effectively navigate and leverage digital technologies. Here's why it's crucial:\n
+
+\n1. Adaptability: Technical proficiency equips individuals with the skills to adapt to the ever-evolving digital landscape. From mastering basic computer operations to navigating complex software applications and digital tools, technical proficiency enables individuals to stay agile in a rapidly changing technological environment.\n
+
+\n2. Empowerment: Proficiency in technical skills empowers individuals to harness the full potential of digital tools and platforms. Whether it's creating multimedia content, programming software applications, or troubleshooting technical issues, technical proficiency provides individuals with the confidence and capability to accomplish their goals in the digital realm.\n
+
+\n3. Participation: In an increasingly digital society, technical proficiency is essential for meaningful participation in various aspects of life, including education, employment, and civic engagement. From online learning platforms to remote work environments and digital advocacy campaigns, technical proficiency enables individuals to actively engage and contribute to their communities and beyond.\n
+
+\nIn summary, technical proficiency is a fundamental component of digital literacy, enabling individuals to adapt, empower themselves, and participate meaningfully in the digital world. By cultivating technical skills and staying abreast of technological advancements, individuals can navigate the complexities of the digital landscape with confidence and competence.
+
+
+
+
+
+
+"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txttp1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".security">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:id="@+id/cvs"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="6dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleY="1.6"
+                android:scaleX="1.14"
+                android:src="@drawable/security"
+                />
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        <TextView
+            android:id="@+id/txts1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Digital identity, Well-being, Safety and Security"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/TextColor"
+            android:textSize="25dp"
+            android:fontFamily="serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvs"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/txts2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Nurturing Digital Literacy: Safeguarding Digital Identity, Well-being, Safety, and Security\n
+
+\nIn the digital age, mastering digital literacy extends beyond technical skills to encompass safeguarding one's digital identity, well-being, safety, and security. Here's why these aspects are vital:\n
+
+\n1. Digital Identity: Digital literacy involves understanding and managing one's digital identity responsibly. It includes cultivating a positive online presence, protecting personal information, and being mindful of the digital footprint left behind. By maintaining control over their digital identity, individuals can build trust, credibility, and authenticity in both personal and professional contexts.\n
+
+\n2. Well-being: Digital literacy encompasses promoting mental and emotional well-being in the digital realm. It involves fostering healthy relationships with technology, managing screen time effectively, and recognizing the impact of digital media on mental health. By practicing digital wellness strategies, individuals can mitigate the risks of digital addiction, cyberbullying, and online harassment, fostering a balanced and positive relationship with technology.\n
+
+\n3. Safety and Security: Digital literacy equips individuals with the knowledge and skills to protect themselves from online threats and vulnerabilities. It involves understanding cybersecurity best practices, recognizing phishing scams, and implementing strong privacy settings on digital platforms. By prioritizing safety and security measures, individuals can safeguard their personal data, financial information, and online accounts, minimizing the risk of identity theft, fraud, and cyberattacks.\n
+
+\nIn summary, digital literacy encompasses safeguarding digital identity, well-being, safety, and security in the digital age. By empowering individuals to navigate the digital landscape responsibly and confidently, digital literacy fosters a safer, healthier, and more secure online environment for all."
+            android:textAlignment="center"
+            style="@style/TextColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txts1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

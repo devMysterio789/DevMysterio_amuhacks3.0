@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".information">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:id="@+id/cvi"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="6dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/information"
+            />
+
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        <TextView
+            android:id="@+id/txti1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Infromation, Data and Content"
+            android:textAlignment="center"
+            style="@style/TextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="25dp"
+            android:fontFamily="serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvi"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/txti2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Understanding Information, Data, and Content in the Realm of Digital Literacy\n
+
+\nIn today's digitally-driven world, being literate goes beyond reading and writing. It encompasses navigating, evaluating, and creating content online effectively. Central to digital literacy are three key elements: information, data, and content.\n
+
+\n1. Information: Information is the raw material from which knowledge is derived. In the digital realm, it's abundant but often unfiltered. Digital literacy involves the ability to discern credible sources, verify information, and differentiate between fact and opinion. Understanding how information is produced, disseminated, and manipulated is crucial in an era of fake news and misinformation.\n
+
+\n2. Data: Data is the foundation of digital information. It comprises facts, statistics, and measurements collected for analysis. Digital literacy involves not only interpreting data but also understanding its context and implications. This includes recognizing biases, understanding data privacy and security, and being aware of the ethical considerations surrounding data usage.\n
+
+\n3. Content: Content refers to the diverse range of media and information available online, from articles and videos to social media posts and podcasts. Digital literacy entails the ability to consume, critique, and create content responsibly. This includes understanding copyright laws, practicing digital etiquette, and developing media literacy skills to analyze and interpret various forms of content critically.\n
+
+\nIn summary, digital literacy revolves around effectively navigating, evaluating, and creating information, data, and content in the digital landscape. It empowers individuals to engage thoughtfully and responsibly with the vast array of resources available online, ultimately enabling informed decision-making and participation in the digital world."
+            android:textAlignment="center"
+            style="@style/TextColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txti1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
